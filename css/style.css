@@ -1,0 +1,117 @@
+body{
+    background-color:#ebd7d0; 
+    color: #8c1529;
+    font-family: "Forum", serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    background-image: url("../images/bouquetW420.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ============================================================================= 
+SCREEN MAX 800 - it means a screen with width less 800px - tablet-mobiles
+============================================================================= */
+/* ----------------------------------------------------------------
+Main
+---------------------------------------------------------------- */
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5;
+    background-color:rgb(255, 255, 255, .7);
+    border: solid 1px rgba(255, 255, 255, 1);
+}
+.letterUpper, .cardEvent{    
+    font-family: "Cinzel", serif;
+    font-weight: bolder;
+}
+.letterLower, .cardDate{    
+    text-transform: lowercase;
+    font-family: "Forum", serif;
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+.name{    
+    font-family: "Great Vibes", cursive;
+    font-size: 2.5em;
+}
+.cardHourPlace li{
+    padding: 0 .5em;
+}
+.cardDate{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.month, .year{
+    border-top: solid 1px #8c1529;
+    border-bottom: solid 1px #8c1529;
+}
+.day{    
+    font-size: 2em;
+    font-weight: bold;
+}
+.cardBtns{    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;    
+}
+.cardBtns button{
+    color: rgb(140, 21, 41, .8);    
+    border: solid 1px rgb(255, 255, 255, 1);  
+    cursor: pointer;   
+    font-family: "Forum", serif;
+    font-weight: bolder;
+    margin: .5em 0;
+}
+/* ----------------------------------------------------------------
+Footer
+---------------------------------------------------------------- */
+footer{
+    background-color: #8c1529;
+    color: #ebd7d0;    
+    line-height: 1.5;  
+    padding-bottom: 0.5em; 
+    margin-top: auto; 
+}
+.copyRight a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none; 
+    cursor: pointer;
+}
+.imgAuthor{
+    color: #fff;;
+    background-color: #ebd7d0;
+}
+/* ============================================================================= 
+SCREEN MIN 800 - it means a screen with width over 800px
+============================================================================= */
+@media screen and (min-width: 800px){
+    body{
+        background-image: url("../images/bouquetH500.png");
+    }
+    .cardDate{        
+        padding-top: .25em;
+        padding-bottom: .25em;
+    }
+    .cardHourPlace li{
+        padding: 0 1em;
+    }
+    .name{
+        font-size: 4em;
+    }
+    .letterLower, .cardDate,.cardBtns button{
+        font-size: 1.8em;
+    }
+}
